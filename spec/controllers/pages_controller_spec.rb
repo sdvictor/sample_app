@@ -43,4 +43,13 @@ describe PagesController do
                           "Ruby on Rails Tutorial Sample App | About")
     end
   end
+  
+  describe "GET 'help'" do
+    it "should have teh right title" do
+      get 'help'
+      response.should have_selector("title",
+                        :content => 
+                        "Ruby on Rails Tutorial Sample App | Help")
+    end
+  end
 end
