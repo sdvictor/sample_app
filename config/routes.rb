@@ -9,6 +9,7 @@ SampleApp::Application.routes.draw do
   get "users/show"
   
   match '/signup',  :to => 'users#new'
+  #match '/index',  :to => 'users#index'
   match '/signin',  :to => 'sessions#new'
   match '/signout', :to => 'sessions#destroy'  
 
